@@ -26,8 +26,14 @@ function addTask() {
     checkbox.type = 'checkbox';
     // Add an event listener to the checkbox to toggle the text decoration of the list item
     checkbox.onclick = function() {
-        listItem.style.textDecoration = this.checked? 'line-through' : 'none';
-    };
+        // If the checkbox is checked, strike through the task text
+        if (this.checked) {
+            listItem.style.textDecoration = 'line-through';
+        } else {
+            // If the checkbox is unchecked, remove the strike through
+            listItem.style.textDecoration = 'none';
+        }
+    }; 
 
     // Create a new span element to hold the task text
     const taskSpan = document.createElement('span');
