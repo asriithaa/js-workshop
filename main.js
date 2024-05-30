@@ -43,10 +43,17 @@ function addTask() {
         editTask(taskSpan);
     };
 
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent='Delete';
+    deleteButton.onclick=function(){
+        taskList.removeChild(listItem);
+    }
+
     // Append the checkbox, task span, and edit button to the list item
     listItem.appendChild(checkbox);
     listItem.appendChild(taskSpan);
     listItem.appendChild(editButton);
+    listItem.appendChild(deleteButton);
 
     // Append the list item to the task list
     taskList.appendChild(listItem);
