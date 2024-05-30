@@ -49,10 +49,20 @@ function addTask() {
         editTask(taskSpan);
     };
 
-    // Append the checkbox, task span, and edit button to the list item
+    // Create a new delete button element
+    const deleteButton = document.createElement('button');
+    // Set the text content of the delete button to "Delete"
+    deleteButton.textContent = 'Delete';
+    // Add an event listener to the delete button to delete the task
+    deleteButton.onclick = function() {
+        taskList.removeChild(listItem);
+    };
+
+    // Append the checkbox, task span, edit button, and delete button to the list item
     listItem.appendChild(checkbox);
     listItem.appendChild(taskSpan);
     listItem.appendChild(editButton);
+    listItem.appendChild(deleteButton);
 
     // Append the list item to the task list
     taskList.appendChild(listItem);
@@ -65,7 +75,7 @@ function editTask(taskSpan) {
     // Prompt the user to enter a new task text
     const newTaskText = prompt('Edit your task:', taskSpan.textContent);
     // Check if the new task text is not null and not empty
-    if (newTaskText!== null && newTaskText!== '') {
+    if (newTaskText !== null && newTaskText !== '') {
         // Set the text content of the task span to the new task text
         taskSpan.textContent = newTaskText;
     }
