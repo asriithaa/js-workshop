@@ -1,0 +1,63 @@
+/* page background */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg,#153677, #4e085f);
+}
+
+/* caluculator box background */
+.calculator {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* input box color */
+.calculator input, .calculator select, .calculator button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #296caf;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+
+/* when you click on the input box, the color changes. */
+.calculator input:focus, .calculator select:focus {
+    border-color: #ff5945;
+    outline: none;
+    box-shadow: 0 0 5px rgba(73, 80, 87, 0.2);
+}
+
+/* calculate button color */
+.calculator button {
+    background-color: #ff5945;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* when you click on the calculate button, then the button color changes to the below mentioned color.   */
+.calculator button:hover {
+    background-color: #153677;
+}
+
+/* Result heading and the desired result will be in the mentioned color below */
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ff5945;
+}
+
