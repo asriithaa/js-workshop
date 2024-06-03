@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- This tag creates an input field where users can enter a number. -->
+        <input type="number" id="num1" placeholder="Enter first number">
+        <!-- a dropdown menu for selecting an arithmetic operation.  -->
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <!-- This tag creates an input field where users can enter a number. -->
+        <input type="number" id="num2" placeholder="Enter second number">
+        <!-- This tag creates a button labeled "Calculate". -->
+        <button onclick="calculate()">Calculate</button>
+        <!-- This tag is used to display the result of the calculation -->
+        <div class="result" id="result"></div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
