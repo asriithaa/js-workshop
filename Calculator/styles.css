@@ -61,3 +61,23 @@ body {
 .equal:hover {
     background-color: #2fa748;
 }
+/* Responsive Design */
+@media (max-width: 600px) {
+    .btn {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+    .display {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+    .display {
+        font-size: 1.2em;
+    }
+}

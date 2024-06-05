@@ -61,3 +61,19 @@ body {
     color: #ff5945;
 }
 
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px 20px;
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .calculator input, .calculator select, .calculator button {
+        font-size: 14px; /* Smaller font size for better readability on small screens */
+        padding: 10px 12px;
+    }
+
+    .result {
+        font-size: 16px; /* Smaller font size for the result text */
+    }
+}
